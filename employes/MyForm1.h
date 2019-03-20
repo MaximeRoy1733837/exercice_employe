@@ -401,6 +401,7 @@ namespace employes {
 	}
 
 	private: System::Void btnRechercherTache_Click(System::Object^  sender, System::EventArgs^  e) {
+		lesDonneesDuProgramme.ChercherTacheParIdentifiant(msclr::interop::marshal_as<std::string>(txtIdentifiant->Text));
 	}
 
 private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
